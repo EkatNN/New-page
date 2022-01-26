@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Форма</title>
+</head>
+<body>
+<h1>Давайте знакомиться!</h1>
+<hr size=1px width=500px align="left">
+<form action="handler.php" method="post">
+    <div class ="form_group">
+        <label for="email">Введите адрес своей эл. почты</label>
+        <div>
+        <input type="text" id="email" name="email" placeholder="E-mail"/>
+        </div>
+    </div>
+    <div class ="form_group">
+        <label for="clientName">Как можно к вам обращаться?</label>
+        <div>
+            <input type="text" id="clientName" name="clientName" placeholder="Имя"/>
+        </div>
+    </div>
+    <div class ="form_group">
+        <label for="aboutMyself">Расскажите немного о себе</label>
+        <div>
+            <textarea id="aboutMyself"></textarea>
+        </div>
+    </div>
+    <div class ="form_group">
+        <label>Выберите пол</label>
+        <label>
+            <input type="radio" value="1" name="myRadio">
+            Мужской
+        </label>
+        <label>
+            Мужской
+            <input type="radio" value="2" name="myRadio">
+        </label> Женский
+        <label>
+            <input type="radio" value="3" name="myRadio">
+            Другой
+        </label>
+    </div>
+    <div class ="form_group">
+        <label>Ваш город проживания/фактического нахождения:</label>
+        <div>
+            <label>
+                <select name="city">
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+                <option>Новосибирск</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class ="form_group">
+    <label>Выберите свой(-и) любимый(-ые) цвет(а):</label>
+    <div>
+        <label>
+            <select name="user_cars[]" multiple="multiple" size="4">
+                <option value="1">Белый</option>
+                <option value="2">Красный</option>
+                <option value="3">Синий</option>
+                <option value="4">Зеленый</option>
+                <option value="5">Желтый</option>
+                <option value="6">Черный</option>
+            </select>
+        </label>
+    </div>
+    </div>
+    <hr size=1px width=500px align="left">
+    <label>
+        <input type="checkbox"/>
+        Я даю согласие на обработку своих данных.
+    </label>
+    <div class ="form_group">
+            <label>
+                <input type="checkbox"/>
+                Я принимаю условия Пользовательского соглашения.
+            </label>
+            <hr size=1px width=500px align="left">
+        </div>
+        <input type="submit" value="Отправить">
+    <p><a href="Page2.html">Перейти к ч. 2 домашнего задания</a></p>
+</form>
+</body>
+</html>
