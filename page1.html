@@ -24,18 +24,13 @@
     <div class ="form_group">
         <label for="aboutMyself">Расскажите немного о себе</label>
         <div>
-            <textarea id="aboutMyself"></textarea>
+            <textarea id="aboutMyself" name="aboutMyself"></textarea>
         </div>
     </div>
     <div class ="form_group">
         <label>Выберите пол</label>
-        <label>
-            <input type="radio" value="1" name="myRadio">
-        </label>
-        <label>
-            Мужской
-            <input type="radio" value="2" name="myRadio">
-        </label> Женский
+            <input type="radio" value="Male" name="gender">Мужской
+            <input type="radio" value="Female" name="gender">Женский
     </div>
     <div class ="form_group">
         <label>Ваш город проживания/фактического нахождения:</label>
@@ -53,25 +48,25 @@
     <label>Выберите свой(-и) любимый(-ые) цвет(а):</label>
     <div>
         <label>
-            <select name="user_cars[]" multiple="multiple" size="4">
-                <option value="1">Белый</option>
-                <option value="2">Красный</option>
-                <option value="3">Синий</option>
-                <option value="4">Зеленый</option>
-                <option value="5">Желтый</option>
-                <option value="6">Черный</option>
+            <select name="favoriteColor" multiple="multiple" size="4">
+                <option value="White">Белый</option>
+                <option value="Red">Красный</option>
+                <option value="Blue">Синий</option>
+                <option value="Green">Зеленый</option>
+                <option value="Yellow">Желтый</option>
+                <option value="Black">Черный</option>
             </select>
         </label>
     </div>
     </div>
     <hr>
     <label>
-        <input type="checkbox"/>
+        <input type="checkbox" name="agreement"/>
         Я даю согласие на обработку своих данных.
     </label>
     <div class ="form_group">
             <label>
-                <input type="checkbox"/>
+                <input type="checkbox" name="acceptTerms"/>
                 Я принимаю условия Пользовательского соглашения.
             </label>
             <hr>
